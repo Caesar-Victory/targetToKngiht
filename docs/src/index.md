@@ -18,12 +18,12 @@ features:
     linkText: "Project in progress"
   - icon: 😍
     title: Rear-End Project notebooks
-    link: https://member.bilibili.com/platform/text-read-list?id=673153
+    link: https://www.bilibili.com/read/readlist/rl673153
     details: Docker, Redis, WSL.
     linkText: "Bibili专栏合集：Linux"
   - icon: 🐯
     title: LeetCode Solutions
-    link: https://member.bilibili.com/platform/text-read-list?id=658326
+    link: https://www.bilibili.com/read/readlist/rl658326
     details: Easy Level, 1200+ rate.
     linkText: "Bibili专栏合集：力扣题解"
 ---
