@@ -6,7 +6,9 @@
 
 
 
-In the given sentence, the author is discussing the use of prefix conventions, specifically the prefixes "a" and "the," to make meaningful distinctions in naming variables and function arguments in Python. The sentence suggests that using these prefixes can be acceptable as long as they serve a purpose.
+The definite article `the` , the indefinite article `a` and `an`, those can be used as prefix of variable. The formal parameters usually be as section of function, however, the global or local variable is not associated with function formally.
+
+So we can use `the` as prefix of formal parameters, and the indefinite article as prefix of global and local variables.
 
 
 
@@ -29,21 +31,9 @@ my_function(a_variable)
 
 
 
-We use the prefix "a" for local variables (`a_variable`, `another_variable`), indicating that these variables are distinct and local to the specific scope they are defined in. The use of "a" as a prefix helps differentiate them from other variables.
-
-We also use the prefix "the" for the function argument (`the_argument`). This naming convention suggests that the argument is unique and refers specifically to the value passed when calling the function. Using "the" as a prefix helps indicate that the argument has a specific and significant role within the function.
-
-It's important to note that the sentence is not describing any Python language features or syntax. Instead, it is discussing a recommended naming convention that can be followed to provide meaningful distinctions in variable and argument names.
-
-Noise words: Words that have no real meaning in the language or are not helpful in understanding the context.
-
 ### 2.4.5 Use Searchable Names
 
-
-
-In Python, the built-in function doesn't include constant conception. But we conventionally use all upper letter of variable to represent constant.
-
-
+The length of variable is associated with using scope of variable. The variable complexity is the price of searchability.
 
 ```python
 REAL_DAY_PEER_IDEA_DAY = 4
