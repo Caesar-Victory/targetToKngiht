@@ -20,7 +20,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      copyright: 'Copyright © 2019-2023 Evan You'
     },
     sidebar: [
       {
@@ -33,6 +33,12 @@ export default defineConfig({
         text: 'Chapter2',
         items: [
           { text: 'Meaningful Names', link: '/Chapter2' },
+        ]
+      },
+      {
+        text: 'Capriccio',
+        items: [
+          { text: 'Collect ideas', link: '/Capriccio' },
         ]
       }
     ],
