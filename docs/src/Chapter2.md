@@ -52,15 +52,19 @@ print(tasks_sum)
 
 
 
-## Using Solution/Problem domain names 
+## Using Solution / Problem  domain names
 
-比如现有以下场景，作为后端开发，我将给前端返回一个带有多个课程的 `response`，在整理数据结构过程中，我需要一个变量存储实例化后的多个课程，但这个变量将会作为实例化后通过ORM语法批量插入数据库的一个数据源，如果以解决方案，也就是最终数据来说，我直接写一个courses`即可，表示存在多个课程，这一个变量对于用户来说是透明的；
+For former, the programmers should use terms in CS, math, software engineering, algorithm, design pattern and so on. For example, if we want to display comment by different levels, the data can be described as `comment_tree_all_levels` if we use Problems domain names. If we use Solution domain names, we can describe the data as `bfs_comment_tree`. The conception  of `use problems domain names` emphasize the process of solving problems and encourage using intermediate variables. Following is a example for latter:
 
-而如果采用问题主导的命令方式，那么我应该按照直接用实例化后的课程集，即`courses_groups_after_instance.`
-
-
-
-还会存在一种情况，由于该数据代表的意义比较复杂，我们无法直接用一个单词描述，但是多个单词组合时，面临一个语序问题。比如对于实际支付的价格，我们可以这样写`facutal_price_paid`，我们也可以对象主导，即`price_factual_paid`。这二者都没错，但显然第一种完全符合中文语序，后者则是对象 + 修饰的描述方式，更加适合英语环境，适合语言的变量会读取更快。
+```python
+def get_user_available_list(user_id):
+    reflection_in_num_coupon_type = {0: 'generic type', 1: 'specific direction', 2: 'specific category', 3: 'specific courses'}
+    redis = get_redis_connection('cart')
+    coupon_all = get_user_coupon_list(user_id)
+    encode_course_id_number = redis.hgetall(f"cart_{user_id}")
+    course_id_selected = {int(key.decode()) for key, value in encode_course_id_number.items() if value == b'1'}
+    course_selected = Course.objects.filter(pk__in=course_id_selected, isDelete=False, isShow=True).all()
+```
 
 
 

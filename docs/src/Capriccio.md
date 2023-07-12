@@ -8,3 +8,9 @@
 
 1. Quickly record step and command in process of solving problems by a few words.
 2. Throw a problem by application scenario.
+3. Don’t describe the same problems in many times and ask many people about those.
+
+
+
+# Retrospect
+
