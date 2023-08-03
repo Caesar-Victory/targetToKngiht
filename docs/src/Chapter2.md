@@ -68,7 +68,13 @@ def get_user_available_list(user_id):
 
 
 
-### Other Principle
+# Add Meaningful Context
+
+
+
+
+
+### Other Principles
 
 Pun: The word has different meanings but sound the same—>We should eradicate ambiguity.
 

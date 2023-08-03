@@ -11,17 +11,12 @@ hero:
       text: Visit 'Clean Code'
       link: /Chapter2
 features:
-  - icon: 😎
-    title: Projects
+  - icon: ✌️
+    title: Project
     link: "https://gitee.com/caesartylor/floatlight"
     details: DRF + Vite.
-    linkText: "Project in progress"
-  - icon: 😍
-    title: Rear-End Project notebooks
-    link: https://www.bilibili.com/read/readlist/rl673153
-    details: Docker, Redis, WSL.
-    linkText: "Bibili专栏合集：Linux"
-  - icon: 🐯
+    linkText: "Project"
+  - icon: 😎
     title: LeetCode Solutions
     link: https://www.bilibili.com/read/readlist/rl658326
     details: Easy Level, 1200+ rate.

@@ -19,14 +19,14 @@ export default defineConfig({
       // { text: 'Clean Code Notes', link: '/markdown-examples' }
     ],
     footer: {
-      message: 'Released under the MIT License.',
+      message: 'Powered VuePress',
       copyright: 'Copyright © 2019-2023 Evan You'
     },
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Interview',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Python basis', link: '/interview1' },
         ]
       },
       {
