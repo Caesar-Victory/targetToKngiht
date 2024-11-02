@@ -8,7 +8,7 @@ hero:
   tagline: Do the better things forever
   actions:
     - theme: brand
-      text: Visit 'Clean Code'
+      text: Visit Clean Code
       link: /Chapter2
 features:
   - icon: ✌️
