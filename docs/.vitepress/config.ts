@@ -8,7 +8,7 @@ export default defineConfig({
   description: "Iron will",
   srcDir: './src',
   base: "/targetToKngiht/",
-  lastUpdated:true,
+  lastUpdated:true, /*support display last_update time*/
   markdown: {
     lineNumbers: true
   },
@@ -45,6 +45,12 @@ export default defineConfig({
       copyright: 'Copyright © 2019-2024 Evan You'
     },
     sidebar: [
+      {
+        text: 'ChatGPT',
+        items: [
+          { text: 'useInstruction', link: '/chatGPTuseInstructions' },
+        ]
+      },
       {
         text: 'Interview',
         items: [
