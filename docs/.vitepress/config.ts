@@ -8,10 +8,32 @@ export default defineConfig({
   description: "Iron will",
   srcDir: './src',
   base: "/targetToKngiht/",
+  lastUpdated:true,
   markdown: {
     lineNumbers: true
   },
+  head: [
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
+    ],
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+    ],
+    [
+      'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+    ]
+  ],
   themeConfig: {
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
     // siteTitle: 'Hello World',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -20,7 +42,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Powered VuePress',
-      copyright: 'Copyright © 2019-2023 Evan You'
+      copyright: 'Copyright © 2019-2024 Evan You'
     },
     sidebar: [
       {
@@ -56,3 +78,16 @@ export default defineConfig({
     ]
   }
 })
+
+export interface LastUpdatedOptions {
+  /**
+   * @default 'Last updated'
+   */
+  text?: string
+
+  /**
+   * @default
+   * { dateStyle: 'short',  timeStyle: 'short' }
+   */
+  formatOptions?: Intl.DateTimeFormatOptions & { forceLocale?: boolean }
+}
