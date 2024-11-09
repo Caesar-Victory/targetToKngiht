@@ -47,6 +47,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'ChatGPT',
+        collapsed: true, /*箭头符号点击后可以隐藏或者打开下一级标题*/
         items: [
           { text: 'useInstruction', link: '/chatGPTuseInstructions' },
         ]
