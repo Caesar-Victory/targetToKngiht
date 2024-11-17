@@ -35,7 +35,7 @@
 
 ```markdown
 请在以后的所有对话中，都在文字末尾加上北京时间
-Please add timestamp[using the standard of the Eastern Eight Zone (UTC+8), the format is hh:mm] to endline of every conversation of your reply.
+Please add conversation's generation timestamp of current reply[using the standard of the Eastern Eight Zone (UTC+8), the format is hh:mm] to end of every conversation of your reply.
 ```
 
 

@@ -15,6 +15,10 @@ export default defineConfig({
   head: [
     [
       'link',
+      { rel: 'icon', href: 'https://www.google.com/favicon.ico' } // 设置网页的 favicon
+    ],
+    [
+      'link',
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
     ],
     [
