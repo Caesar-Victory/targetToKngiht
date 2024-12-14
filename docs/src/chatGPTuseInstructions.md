@@ -37,15 +37,15 @@
 
 # the Limitation of AI
 
-such as Apple Intelligence, we need a integrited AI. We need to spend much time coding special API for pernsonal demand, such as calculation of calorie.
+such as Apple Intelligence, we need a integrated AI. We need to spend much time coding special API for personal demand, such as calculation of calorie.
 
 ## 时间记录
-note: the state of this prompt is **deprecated**, because AI can't add accurent timestamp at the end of reply.
+note: the state of this prompt is **deprecated**, because AI can't add accurate timestamp at the end of reply.
 ```markdown
 Please add conversation's generation timestamp of current reply[using the standard of the Eastern Eight Zone (UTC+8), the format is hh:mm] to end of every conversation of your consequent reply.zzzzzzzzz
 ```
 
-## Programming Language Convertion
+## Programming Language Conversation
 
 ```markdown
 Please convert this Python code `` into JavaScript,What's more, you need to keep using same grammer and data structure in possible.
@@ -110,3 +110,16 @@ SysSans-Hant-Regular.ttf`并且替换这个目录：`C:\Users\41999\Documents\wd
 ```markdown
 Please generate code in JavaScript and C++ by this Python code ``, and the generated code need to keep similar grammar in possible.
 ```
+
+
+
+
+
+## 时间记录的数据处理
+
+
+
+```markdown
+以上为每个任务，任务的开始时间和结束时间。1. 计算每个任务耗时；2，保留耗时和任务名称，以这两者为表格的列标题，3. 按照耗时，逆序排列任务; 4. 相同任务的耗时直接累加，保持任务的唯一性；5，请以CSV格式输出表格。
+```
+
