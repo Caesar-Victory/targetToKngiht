@@ -16,7 +16,7 @@
    4. 
 6. 数据分析
    1. 分析提问者提问范围&性格&偏好
-   2. 
+   2. 自动计算时间差整理为特定格式供给excel可视化
 7. 创作者
    1. 抠图 & 文生图
    2. 
@@ -28,14 +28,27 @@
     1. 格式：add time on the end line of every reply
     2. 格式：按照提问针对的对话层次整理思维导图
 
-11. XXX
+11. 运动分析与建议
+    1. 评价步幅，步频
+    2. 计算平均消耗量和达成目标的时间
+    3. 身体维护
 
+12. XXX
+
+# the Limitation of AI
+
+such as Apple Intelligence, we need a integrited AI. We need to spend much time coding special API for pernsonal demand, such as calculation of calorie.
 
 ## 时间记录
+note: the state of this prompt is **deprecated**, because AI can't add accurent timestamp at the end of reply.
+```markdown
+Please add conversation's generation timestamp of current reply[using the standard of the Eastern Eight Zone (UTC+8), the format is hh:mm] to end of every conversation of your consequent reply.zzzzzzzzz
+```
+
+## Programming Language Convertion
 
 ```markdown
-请在以后的所有对话中，都在文字末尾加上北京时间
-Please add conversation's generation timestamp of current reply[using the standard of the Eastern Eight Zone (UTC+8), the format is hh:mm] to end of every conversation of your reply.
+Please convert this Python code `` into JavaScript,What's more, you need to keep using same grammer and data structure in possible.
 ```
 
 
@@ -91,4 +104,9 @@ SysSans-Hant-Regular.ttf`并且替换这个目录：`C:\Users\41999\Documents\wd
 
 ```markdown
 现在假设你是一名web开发工程师，精通JavaScript和Vue框架，目前借助交流中的代码训练平台这个前端，教授我Vue基本语法和项目搭建过程。请您在历次回复中，按照相对固定的内容回复，我希望从您的回复中了解Vue的基本语法，函数的调用关系，组件之间的调用关系，页面中按钮，选框和基本样式的布局。请您记住这个基本设定，重新回答我关于改进时间计时展示方式和上限的提问，问题可以参照上一轮提问
+```
+
+### Generate code in other Program language by one language
+```markdown
+Please generate code in JavaScript and C++ by this Python code ``, and the generated code need to keep similar grammar in possible.
 ```

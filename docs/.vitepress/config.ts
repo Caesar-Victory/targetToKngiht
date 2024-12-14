@@ -50,6 +50,12 @@ export default defineConfig({
     },
     sidebar: [
       {
+        text: '避坑担路网python开发工程师',
+        items: [
+          { text: 'Collect ideas', link: '/避坑担路网python开发工程师' },
+        ]
+      },
+      {
         text: 'ChatGPT',
         collapsed: true, /*箭头符号点击后可以隐藏或者打开下一级标题*/
         items: [
