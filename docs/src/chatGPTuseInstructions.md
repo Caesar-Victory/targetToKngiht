@@ -35,6 +35,10 @@
 
 12. XXX
 
+# Update the direction to update doc of AI
+
+- 2/5/2025 record usage experience of AI in daily life
+
 # the Limitation of AI
 
 such as Apple Intelligence, we need a integrated AI. We need to spend much time coding special API for personal demand, such as calculation of calorie.
@@ -126,6 +130,6 @@ Please generate code in JavaScript and C++ by this Python code ``, and the gener
 3. 按照耗时，逆序排列任务; 
 4. 相同任务的耗时直接累加，保持任务的唯一性；
 5. 请提供CSV格式的表格，给我下载；
-6. 请以MM为时间单位
+6. 请以MM为时间单位。
 ```
 
