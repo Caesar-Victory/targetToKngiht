@@ -14,20 +14,39 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # 使用最新版本的 checkout action，避免潜在的兼容性问题
+      # v3 已较旧，v4 是当前推荐版本
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # 获取完整的 Git 历史，以便构建过程中可能需要的版本信息
+
+      # 更新到 setup-node 的最新版本 v4
+      # Node.js 16 已于 2023 年 9 月结束支持，升级到 20（LTS 版本）以确保长期兼容性
       - uses: actions/setup-node@v4
         with:
-          node-version: 20  # 更新到更新的 Node.js 版本，16 已不再推荐
-          cache: npm
+          node-version: 20  # 可根据项目需求调整，但建议使用 LTS 版本
+          cache: npm  # 缓存 npm 依赖，提升构建速度
+
+      # 安装依赖，确保环境一致性
       - run: npm ci
+
+      # 构建 VitePress 文档
       - name: Build
         run: npm run docs:build
+
+      # 更新到 configure-pages 的最新版本 v5
+      # 确保与 GitHub Pages 的最新后端兼容
       - uses: actions/configure-pages@v5
+
+      # 更新到 upload-pages-artifact 的最新版本 v3
+      # v1 可能间接依赖已废弃的 actions/upload-artifact@v3
+      # v3 使用新的 artifact 上传机制（基于 v4），避免废弃错误
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: docs/.vitepress/dist  # 指定构建输出目录
+
+      # 更新到 deploy-pages 的最新版本 v4
+      # 确保与 upload-pages-artifact@v3 兼容，正确解析和部署 artifacts
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
