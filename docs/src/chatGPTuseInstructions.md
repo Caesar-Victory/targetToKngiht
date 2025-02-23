@@ -1,40 +1,3 @@
-# `chatGPT`可以怎么用？
-
-1. 代码解读
-2. 代码比较
-   1. 格式：
-3. 阅读（微信读书）
-   1. 楼主想法摘要
-   2. 作者引用论文概要
-   3. 书中文段解析
-4. 写作
-   1. 邮件美化
-5. 自动化脚本编写
-   1. 时间模板生成（周数+间隔天数计算）
-   2. 字体模块制作（字体文件替换/description撰写/打包）
-   3. 搜索并且转换字体格式
-   4. 
-6. 数据分析
-   1. 分析提问者提问范围&性格&偏好
-   2. 自动计算时间差整理为特定格式供给excel可视化
-7. 创作者
-   1. 抠图 & 文生图
-   2. 
-8. 疾病咨询
-   1. 解读体检报告异常项目产生原因
-9. 前端项目撰写
-   1. 基本布局设计，语法解析，语法检查
-10. 对回复内容的干预
-    1. 格式：add time on the end line of every reply
-    2. 格式：按照提问针对的对话层次整理思维导图
-
-11. 运动分析与建议
-    1. 评价步幅，步频
-    2. 计算平均消耗量和达成目标的时间
-    3. 身体维护
-
-12. XXX
-
 # Update the direction to update doc of AI
 
 - 2/5/2025 record usage experience of AI in daily life
@@ -93,9 +56,6 @@ SysSans-Hant-Regular.ttf`并且替换这个目录：`C:\Users\41999\Documents\wd
 
 ### 角色扮演
 
-```markdown
-现在假设你是一名web开发工程师，精通JavaScript和Vue框架，目前借助交流中的代码训练平台这个前端，教授我Vue基本语法和项目搭建过程。请您在历次回复中，按照相对固定的内容回复，我希望从您的回复中了解Vue的基本语法，函数的调用关系，组件之间的调用关系，页面中按钮，选框和基本样式的布局。请您记住这个基本设定，重新回答我关于改进时间计时展示方式和上限的提问，问题可以参照上一轮提问
-```
 
 ### Generate code in other Program language by one language
 ```markdown
@@ -108,8 +68,6 @@ Please generate code in JavaScript and C++ by this Python code ``, and the gener
 
 ## 时间记录的数据处理
 
-
-
 ```markdown
 以上为每个任务，任务的开始时间和结束时间。
 1. 计算每个任务耗时；
@@ -120,3 +78,9 @@ Please generate code in JavaScript and C++ by this Python code ``, and the gener
 6. 请以MM为时间单位。
 ```
 
+## 软考相关
+
+- 请识别图中题目和选项
+- 分析在软件中级系统分析师知识点中
+- 分析题目和选项。并就其中的关键概念做出延伸讲解。
+- 在自私的基因中第一章【为什么会有人呢？】中提及``
