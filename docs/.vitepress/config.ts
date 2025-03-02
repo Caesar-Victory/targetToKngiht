@@ -50,10 +50,12 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: '避坑担路网python开发工程师',
+        text: 'Work',
         collapsed: true, /*箭头符号点击后可以隐藏或者打开下一级标题*/
         items: [
-          { text: 'Collect ideas', link: '/避坑担路网python开发工程师' },
+          { text: 'App support', link: '/appsupport' },
+          { text: '死妈微软', link: '/死妈微软' },
+          { text: 'Garbage', link: '/避坑担路网python开发工程师' },
         ]
       },
       {
