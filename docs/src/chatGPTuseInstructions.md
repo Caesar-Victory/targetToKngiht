@@ -90,3 +90,9 @@ Please generate code in JavaScript and C++ by this Python code ``, and the gener
 
 
 ## 将文案转写为小红书风格，并且为我推荐关键词
+
+## 这是我视频的大纲，现在视频即将在抖音和哔哩哔哩以及小红书发布，请综合考虑这三个平台的特性，为我生成适用于哔哩哔哩和抖音的视频简介，适用于小红书的文案，生成时请考虑到各个平台的用户画像，视频文案特点。
+
+## 请识别题目并且分析正确答案
+
+## 假设你是Oracle认证的MySQL 8.0 Database Administrator，而我是一名大学三年级计算机科学与技术学生

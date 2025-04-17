@@ -33,7 +33,7 @@ reg delete "HKLM\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\WindowsSt
 9. 以命令行的方式，通过记事本打开相关文件，查看所有历史命令 `notepad (Get-PSReadLineOption).HistorySavePath`
 10. 通过简洁的Powershell命令打印当前工作路径下所有文件夹名称 ```Get-ChildItem -Directory -Name```，此举主要是方便提交产品编号信息
 11. iPhone在拨号键盘输入*3001#12345#*，然后拨打，可以快速查看参考信号接受功率，信噪比
-12. VMWare虚拟网卡会导致进入路由器后台192.168.1.1被错误定向到虚拟网卡，因此需要禁用该网卡，才能正确访问路由器后台
+12. VMWare虚拟网卡会导致进入路由器后台192.168.1.1被错误定向到虚拟网卡【一般考虑影响DNS的因素】，因此需要禁用该网卡，才能正确访问路由器后台
 ```Powershell
 ### 该命令运行后可以看到网口是VMware，因此开始怀疑虚拟网卡
 Test-NetConnection -ComputerName 192.168.1.1 -Port 80
@@ -48,4 +48,15 @@ PingSucceeded          : True
 PingReplyDetails (RTT) : 0 ms
 TcpTestSucceeded       : False
 ```
-13.
+13. 查看修改注册表以支持Doh是否成功`Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" -Name "EnableAutoDoh"`
+14. 预期返回结果 `EnableAutoDoh : 2`
+
+
+mysql> CREATE DATABASE IF NOT EXISTS equipment_monitoring;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> use equipment_monitoring;
+Database changed
+mysql> CREATE TABEL equipment(equipment_);
+
+
