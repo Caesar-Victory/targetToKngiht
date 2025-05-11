@@ -48,8 +48,11 @@ PingSucceeded          : True
 PingReplyDetails (RTT) : 0 ms
 TcpTestSucceeded       : False
 ```
-13. 查看修改注册表以支持Doh是否成功`Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" -Name "EnableAutoDoh"`
+13. 查看修改注册表以支持DoH是否成功`Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" -Name "EnableAutoDoh"`
 14. 预期返回结果 `EnableAutoDoh : 2`
+15. iPhone不能设置消息置顶，但是Apple Wath收到消息回复时，有置顶消息的选项
+16. 打开注册表，路径为：`计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`新建项目:ShowSecondsInSystemClock,值的类型为:DWORD（32位）值,将其值修改为1
+17. 
 
 
 mysql> CREATE DATABASE IF NOT EXISTS equipment_monitoring;
