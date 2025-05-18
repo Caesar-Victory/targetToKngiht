@@ -52,8 +52,15 @@ TcpTestSucceeded       : False
 14. 预期返回结果 `EnableAutoDoh : 2`
 15. iPhone不能设置消息置顶，但是Apple Wath收到消息回复时，有置顶消息的选项
 16. 打开注册表，路径为：`计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`新建项目:ShowSecondsInSystemClock,值的类型为:DWORD（32位）值,将其值修改为1
-17. 
+17. 早起打开电脑存在：在音频输出设备中切换时，会有短暂发生，但是切换之后就没有声音了。有以下解决步骤
+    1. 关闭音频增强和空间音效
+    2. 重装驱动
+    3. 有异常现象：音频处理对象中每组音频效果，其中Elevoc有四组，Realtek有两组（目前正常情况是分别减半）
+    4. 卸载声音，视频和游戏控制器分组下的所有驱动
+    5. 重装驱动和重启设备
 
+18. 独显电脑也要记得更新核心显卡，不然那天切换到核心显卡的时候，发现核显显卡驱动版本太低，又需要重新下载一次驱动，这种维护工作应该放在平时
+19. placeholder
 
 mysql> CREATE DATABASE IF NOT EXISTS equipment_monitoring;
 Query OK, 1 row affected (0.04 sec)
@@ -61,5 +68,4 @@ Query OK, 1 row affected (0.04 sec)
 mysql> use equipment_monitoring;
 Database changed
 mysql> CREATE TABEL equipment(equipment_);
-
 
