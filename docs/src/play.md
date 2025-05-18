@@ -60,12 +60,5 @@ TcpTestSucceeded       : False
     5. 重装驱动和重启设备
 
 18. 独显电脑也要记得更新核心显卡，不然那天切换到核心显卡的时候，发现核显显卡驱动版本太低，又需要重新下载一次驱动，这种维护工作应该放在平时
-19. placeholder
-
-mysql> CREATE DATABASE IF NOT EXISTS equipment_monitoring;
-Query OK, 1 row affected (0.04 sec)
-
-mysql> use equipment_monitoring;
-Database changed
-mysql> CREATE TABEL equipment(equipment_);
+19. placeholder.
 
