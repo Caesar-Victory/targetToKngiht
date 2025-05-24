@@ -61,4 +61,4 @@ TcpTestSucceeded       : False
 
 18. 独显电脑也要记得更新核心显卡，不然那天切换到核心显卡的时候，发现核显显卡驱动版本太低，又需要重新下载一次驱动，这种维护工作应该放在平时
 19. placeholder.
-
+20. 在Windows11电脑上，安装了8.0.42版本的MySQL Community Server。平时在PowerShell 
