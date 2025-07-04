@@ -61,4 +61,7 @@ TcpTestSucceeded       : False
 
 18. 独显电脑也要记得更新核心显卡，不然那天切换到核心显卡的时候，发现核显显卡驱动版本太低，又需要重新下载一次驱动，这种维护工作应该放在平时
 19. placeholder.
-20. 在Windows11电脑上，安装了8.0.42版本的MySQL Community Server。平时在PowerShell 
+20. 在Windows11电脑上，安装了8.0.42版本的MySQL Community Server。平时在PowerShell
+21. 与AI对话时，将对话的名字改为参数的名字
+22. AI回复知识的吸收，最好当日完成 
+23. MySQL文档搜索接口名时，会检索出来多个结果，但该页面不一定能找到参数，最快的方式是使用Google搜索
