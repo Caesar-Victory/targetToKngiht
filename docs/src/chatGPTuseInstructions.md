@@ -85,6 +85,57 @@ Please generate code in JavaScript and C++ by this Python code ``, and the gener
 - 分析题目和选项。并就其中的关键概念做出延伸讲解。
 - 在自私的基因中第一章【为什么会有人呢？】中提及``
 
+## SVG formatting
+
+`## Structure & semantics
+
+- **Always generate a pure SVG** unless you explicitly ask for HTML.
+- Start with:
+    - XML prolog `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
+    - Single `<svg>` root with explicit `width`, `height`, `viewBox`, and `xmlns="http://www.w3.org/2000/svg"`.
+- Keep everything inside `<svg>`—no `<html>`, `<head>`, `<meta>`, `<div>`, etc. (no `foreignObject` unless you request it).
+
+## Text safety (no more XML parse errors)
+
+- Escape special characters inside text nodes:
+    - `&` → `&`, `<` → `<`, `>` → `>`, quotes as needed.
+- Double-check **titles, headings, and code samples** for stray `&`.
+
+## Layout that won’t overlap
+
+- Use a **grid of blocks** (cards) with fixed coordinates and padding:
+    - Header at `(40,40)`
+    - Top callout right below
+    - Two-column cards (left “What went wrong?”, right “How to fix”)
+    - “Examples” row
+    - Separate **Reason** box
+    - Separate **Checklist** box
+- Reserve vertical space with a generous canvas height (e.g., 940–1000 px) and **increase height automatically** if new sections are added.
+
+## Readable text wrapping
+
+- SVG doesn’t auto-wrap, so I’ll **manually line-break** long sentences:
+    - Use multiple `<text>` elements or `<tspan x="…" dy="…">` for lines.
+    - Target ~55–65 characters per line for readability.
+    - Split paragraphs proactively (like we did for “What went wrong?”).
+
+## Visual consistency
+
+- Define a `<style>` in `<defs>` with reusable classes (headings, body text, code, chips, cards, bullets).
+- Use high-contrast, accessible colors and consistent spacing/padding.
+- For lists (like the Checklist), render as **bullet rows** (circle + text), never inline.
+
+## Robustness & portability
+
+- Stick to **pure SVG** features (no `foreignObject`) for widest compatibility.
+- Ensure encoding is **UTF-8**.
+- Note the correct MIME type: **`image/svg+xml`** (I’ll include this in the notes when relevant).
+
+## Your preference (so we start right)
+
+- Treat your default ask as: *“Generate a standalone SVG (single `<svg>` root) with safe text and non-overlapping blocks.”*
+- Include your **experience note** section if you mention it again.`
+
 
 ## 请根据根据抖音，小红书和哔哩哔哩平台以及用户群画像，生成视频 & 教程简介
 
